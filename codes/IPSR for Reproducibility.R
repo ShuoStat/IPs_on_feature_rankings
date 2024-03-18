@@ -243,7 +243,7 @@ dplot <- as.dendrogram(h) %>%
 col_fun  <- circlize::colorRamp2(quantile(Dat, c(0.01, 0.5, 0.99)),
                                  c("green", "white", "red"))
 
-tiff("../output/FigureHeatMap.tiff", width = 8, height = 4, compression = "lzw",
+tiff("../output/Figure 3.tiff", width = 8, height = 4, compression = "lzw",
      units = "in", res = 600)
 
 library(ComplexHeatmap)
@@ -496,7 +496,7 @@ top.plot <- function(obj, obs, topn = 10){
 
 obj <- drop1out.ranks$BRCA
 
-tiff("../output/Figure 6.tiff", width = 10, height = 3, units = "in",
+tiff("../output/Figure 7.tiff", width = 10, height = 3, units = "in",
      res = 600, compression = "lzw")
 # png("../output/Figure 6.png", width = 10, height = 3, units = "in",
 #      res = 600)
